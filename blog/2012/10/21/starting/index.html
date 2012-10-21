@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - ypresto tech blog [en]</title>
+  <title>Starting - ypresto tech blog [en]</title>
   <meta name="author" content="Yuya Tanaka">
 
   
-  <meta name="description" content="Blog Archive 2012 Starting
-Oct 21 2012 posted in Octopress Recent Posts Starting GitHub Repos Status updating... @ypresto on GitHub $.domReady( &hellip;">
+  <meta name="description" content="I was very in doubt which tool to use for blogging tech things,
+but finally I&#8217;m using [Octopress|http://octopress.org/].
+I like Markdown, Vim, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@ Oct 21 2012 posted in Octopress Recent Posts Starting GitHub Repos Status updati
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ypresto.github.com/blog/blog/archives/">
+  <link rel="canonical" href="http://ypresto.github.com/blog/blog/2012/10/21/starting/">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/blog/javascripts/modernizr-2.0.js"></script>
@@ -64,35 +65,109 @@ Oct 21 2012 posted in Octopress Recent Posts Starting GitHub Repos Status updati
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Starting</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-21T20:08:00+09:00" pubdate data-updated="true">Oct 21<span>st</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>I was very in doubt which tool to use for blogging tech things,
+but finally I&#8217;m using [Octopress|http://octopress.org/].
+I like Markdown, Vim, Git too much to use web based blogging service.
+Octopress is best choise I had ever seen for such user.</p>
 
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/blog/2012/10/21/starting/">Starting</a></h1>
-<time datetime="2012-10-21T20:08:00+09:00" pubdate><span class='month'>Oct</span> <span class='day'>21</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/blog/categories/octopress/'>Octopress</a></span>
-</footer>
+<ul>
+<li>Fully customized if you want with writing ruby code or adding plugins.</li>
+<li>&#8220;import&#8221; or &#8220;export&#8221; is NOT necessary:
+all of articles built from Markdown files <em>in your local filesystem</em>.</li>
+</ul>
 
 
-</article>
+<p>To setup:</p>
 
+<pre><code>git clone https://github.com/imathis/octopress.git
+cd octopress
+bundle install          # you should `gem install bundler` before!
+rake setup_github_pages # need your repository url
+# edit your _config.xml file to set url, title, author, etc.
+rake gen_deploy
+# you can see your blog on http://USERNAME.github.com/
+rake new_post[title]    # \[title\] for zsh
+# edit your new post on sources/_posts/*.markdown
+rake gen_deploy
+# YOU MADE IT!!!
+</code></pre>
+
+<p>Enjoy happy tech bloggin&#8217; ;)</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Yuya Tanaka</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-21T20:08:00+09:00" pubdate data-updated="true">Oct 21<span>st</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/blog/categories/octopress/'>Octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ypresto.github.com/blog/blog/2012/10/21/starting/" data-via="ypresto_i" data-counturl="http://ypresto.github.com/blog/blog/2012/10/21/starting/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

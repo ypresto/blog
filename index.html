@@ -9,7 +9,9 @@
   <meta name="author" content="Yuya Tanaka">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="I was very in doubt which tool to use for blogging tech things,
+but finally I&#8217;m using [Octopress|http://octopress.org/].
+I like Markdown, Vim, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +67,69 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2012/10/21/starting/">Starting</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-21T20:08:00+09:00" pubdate data-updated="true">Oct 21<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was very in doubt which tool to use for blogging tech things,
+but finally I&#8217;m using [Octopress|http://octopress.org/].
+I like Markdown, Vim, Git too much to use web based blogging service.
+Octopress is best choise I had ever seen for such user.</p>
+
+<ul>
+<li>Fully customized if you want with writing ruby code or adding plugins.</li>
+<li>&#8220;import&#8221; or &#8220;export&#8221; is NOT necessary:
+all of articles built from Markdown files <em>in your local filesystem</em>.</li>
+</ul>
+
+
+<p>To setup:</p>
+
+<pre><code>git clone https://github.com/imathis/octopress.git
+cd octopress
+bundle install          # you should `gem install bundler` before!
+rake setup_github_pages # need your repository url
+# edit your _config.xml file to set url, title, author, etc.
+rake gen_deploy
+# you can see your blog on http://USERNAME.github.com/
+rake new_post[title]    # \[title\] for zsh
+# edit your new post on sources/_posts/*.markdown
+rake gen_deploy
+# YOU MADE IT!!!
+</code></pre>
+
+<p>Enjoy happy tech bloggin&#8217; ;)</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/blog/archives">Blog Archives</a>
@@ -77,9 +142,58 @@
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
+      <li class="post">
+        <a href="/blog/blog/2012/10/21/starting/">Starting</a>
+      </li>
+    
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/ypresto">@ypresto</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ypresto',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("ypresto_i", 4, false);
+    });
+  </script>
+  <script src="/blog/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/ypresto_i" class="twitter-follow-button" data-show-count="false">Follow @ypresto_i</a>
+  
+</section>
 
 
 

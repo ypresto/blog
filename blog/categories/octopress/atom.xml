@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ypresto tech blog [en]]]></title>
-  <link href="http://ypresto.github.com/blog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | ypresto tech blog [en]]]></title>
+  <link href="http://ypresto.github.com/blog/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://ypresto.github.com/blog/"/>
   <updated>2012-10-21T20:41:03+09:00</updated>
   <id>http://ypresto.github.com/blog/</id>
@@ -19,13 +19,13 @@
     <updated>2012-10-21T20:08:00+09:00</updated>
     <id>http://ypresto.github.com/blog/blog/2012/10/21/starting</id>
     <content type="html"><![CDATA[<p>I was very in doubt which tool to use for blogging tech things,
-but finally I&#8217;m using [Octopress|http://octopress.org/].
+but finally I'm using [Octopress|http://octopress.org/].
 I like Markdown, Vim, Git too much to use web based blogging service.
 Octopress is best choise I had ever seen for such user.</p>
 
 <ul>
 <li>Fully customized if you want with writing ruby code or adding plugins.</li>
-<li>&#8220;import&#8221; or &#8220;export&#8221; is NOT necessary:
+<li>"import" or "export" is NOT necessary:
 all of articles built from Markdown files <em>in your local filesystem</em>.</li>
 </ul>
 
@@ -45,7 +45,7 @@ rake gen_deploy
 # YOU MADE IT!!!
 </code></pre>
 
-<p>Enjoy happy tech bloggin&#8217; ;)</p>
+<p>Enjoy happy tech bloggin' ;)</p>
 ]]></content>
   </entry>
   
