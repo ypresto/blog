@@ -4,7 +4,7 @@
   <title><![CDATA[ypresto tech blog [en]]]></title>
   <link href="http://ypresto.github.com/blog/atom.xml" rel="self"/>
   <link href="http://ypresto.github.com/blog/"/>
-  <updated>2012-10-22T00:15:09+09:00</updated>
+  <updated>2012-10-22T00:17:03+09:00</updated>
   <id>http://ypresto.github.com/blog/</id>
   <author>
     <name><![CDATA[Yuya Tanaka]]></name>
@@ -19,7 +19,7 @@
     <updated>2012-10-21T20:08:00+09:00</updated>
     <id>http://ypresto.github.com/blog/blog/2012/10/21/starting</id>
     <content type="html"><![CDATA[<p>I was very in doubt which tool to use for blogging tech things,
-but finally I&#8217;m using &lt;Octopress|http://octopress.org/>.
+but finally I&#8217;m using <a href="http://octopress.org/">Octopress</a>.
 I like Markdown, Vim, Git too much to use web based blogging service.
 Octopress is best choise I had ever seen for such user.</p>
 
